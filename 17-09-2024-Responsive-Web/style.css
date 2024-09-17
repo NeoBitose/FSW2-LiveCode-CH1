@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: limegreen;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.container {
+    background-color: lightblue;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.col {
+    /* background-color: lavender !important;
+    min-height: 300px; */
+    width: 30%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+/* Tabler View */
+@media (max-width:768px) {
+    h1 {
+        color: orange;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .col{
+        width: 45%;
+    }
+
+    .hide-desktop-only{
+        display: flex;
+    }
+}
+
+/* Mobile View */
+@media (max-width:400px) {
+    h1 {
+        color: blue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .col{
+        width: 100%;
+    }
+}
